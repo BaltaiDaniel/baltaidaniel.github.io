@@ -18,22 +18,12 @@
   <priority>0.50</priority>
 </url>
 <url>
-  <loc>https://baltaidaniel.github.io/blog.html</loc>
-  <lastmod>2024-05-24T00:09:54+00:00</lastmod>
-  <priority>0.99</priority>
-</url>
-<url>
   <loc>https://baltaidaniel.github.io/contact.html</loc>
-  <lastmod>2024-05-24T00:09:54+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://baltaidaniel.github.io/about.html</loc>
   <lastmod>2024-05-24T00:09:54+00:00</lastmod>
   <priority>0.30</priority>
 </url>
 <url>
-  <loc>https://baltaidaniel.github.io/resources.html</loc>
+  <loc>https://baltaidaniel.github.io/about.html</loc>
   <lastmod>2024-05-24T00:09:54+00:00</lastmod>
   <priority>0.30</priority>
 </url>

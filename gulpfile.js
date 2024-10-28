@@ -19,21 +19,21 @@ var paths = {
         www:        './public_html'
     },
     src: {
-        root:       'public_html/assets',
+        root:       'public_html/',
         html:       'public_html/**/*.html',
-        css:        'public_html/assets/css/*.css',
-        js:         'public_html/assets/js/*.js',
-        vendors:    'public_html/assets/vendors/**/*.*',
-        imgs:       'public_html/assets/imgs/**/*.+(png|jpg|gif|svg)',
-        scss:       'public_html/assets/scss/**/*.scss'
+        css:        'public_html/css/*.css',
+        js:         'public_html/js/*.js',
+        //vendors:    'public_html/vendors/**/*.*',
+        imgs:       'public_html/imgs/**/*.+(png|jpg|gif|svg)',
+        scss:       'public_html/scss/**/*.scss'
     },
-    dist: {
+    /*dist: {
         root:       'public_html/dist',
         css:        'public_html/dist/css',
         js:         'public_html/dist/js',
         imgs:       'public_html/dist/imgs',
         vendors:    'public_html/dist/vendors'
-    }
+    }*/
 }
 
 // Compile SCSS
@@ -91,7 +91,7 @@ gulp.task('clean', function () {
 });
 
 // Prepare all assets for production
-gulp.task('build', gulp.series('sass', 'css', 'js', 'vendors', 'img'));
+gulp.task('build', gulp.series('sass', 'css', 'js', 'img'));     //'img'));
 
 
 // Watch (SASS, CSS, JS, and HTML) reload browser on change
