@@ -635,6 +635,7 @@ ol {
 -----------------------*/
 .callto {
   padding-top: 130px;
+  padding-left: 40px;
 }
 .callto.sp__callto {
   padding-top: 0;
@@ -642,7 +643,6 @@ ol {
 }
 
 .callto__text h2 {
-  margin-left: 260px;
   color: #ffffff;
   font-size: 42px;
   font-weight: 700;
@@ -657,14 +657,15 @@ ol {
   margin-bottom: 55px;
 }
 .callto__text a {
-  margin-left: 360px;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
   font-family: "Play", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
+
+  justify-content: center;
   padding: 14px 32px 12px;
 }
 
@@ -672,10 +673,11 @@ ol {
 .btn-gradient-cont{
   background: linear-gradient(30deg, #f44, #44f);
   border-radius: 25px;
-  margin-left: 0;
-  display: inline-flex;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
   padding: 0;
-  margin-left: 260px;
 }
 
 
@@ -684,6 +686,7 @@ ol {
   color: #fff;
   font-size: 15px;
   font-weight: 700;
+  position: relative;
   font-family: "Play", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
