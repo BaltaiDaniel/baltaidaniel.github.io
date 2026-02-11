@@ -1,671 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Baltai Daniel is a self-taught developer with expertise in software development, video game development, web development, and 3D modeling.">
-    <meta name="author" content="Baltai Daniel">
-    <meta name="keywords" content="baltai, daniel, software, github, game, self taught, bd21, developer, dev, dan, b, frontend, web, developer, development">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    <title>Baltai Daniel - Official Site</title>
-    <meta property="og:title" content="Baltai Daniel - Official Site">
-    <meta name="google-site-verification" content="ywTS2u_q6SEd41QUWiK1uLP8YXIilDxi-cDCLh1-Zhs" />
-    <meta property="og:description" content="">
-    <meta property="og:image" content="favicon.png">
-    <meta property="og:url" content="https://baltaidaniel.github.io">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Baltai Daniel">
-    <meta name="google-adsense-account" content="ca-pub-7060227196982980">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="description" content="Baltai Daniel is a self-taught developer with expertise in software development and video game development, as well as 3D modeling.">
+  <meta name="author" content="Baltai Daniel">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <title>Baltai Daniel - Portfolio</title>
+  <meta property="og:title" content="Baltai Daniel">
+  <meta property="og:description" content="Software developer">
+  <meta property="og:image" content="favicon.png">
+  <meta property="og:url" content="https://baltaidaniel.github.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Baltai Daniel">
+  <meta name="twitter:description" content="Software developer">
+  <meta name="twitter:image" content="favicon.png">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <!---- Animation css BEGIN --->
-    <link rel="stylesheet" href="css/backInDown.css" type="text/css">
-    <link rel="stylesheet" href="css/slideInDown.css" type="text/css">
-    <link rel="stylesheet" href="css/slideInUp.css" type="text/css">
-    <link rel="stylesheet" href="css/fadeIn.css" type="text/css">
-    <!---- Animation css END --->
-    
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
+  
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+
+  <!---- Animation css BEGIN --->
+  <link rel="stylesheet" href="css/slideInUp.css" type="text/css">
+  <!---- Animation css END --->
+
+
+  <style>
+    :root {
+      --bg-dark: #0e0e11;
+      --bg-card: #18181d;
+      --accent: #4f8cff;
+      --text-muted: #9ca3af;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background: var(--bg-dark);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 32;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff;
+    }
+    .nav-link:hover {
+      color: #1db954;
+    }
+
+    .nav-item-text {
+      display: none;
+      color: white;
+      padding-left: 20px;
+      font-size: 16px;
+    }
+
+    .nav-item a {
+      color: #06f;
+    }
+
+    @media (max-width: 720px) {
+      .navbar-nav:first-child {
+        margin-top: 32px;
+      }
+      .nav-item-text {
+        display: inline-block;
+      }
+      .nav-item {
+        width: 100%;
+      }
+    }
+
+
+    .header__logo {
+      font-size: 20px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .header__logo img {
+      width: inherit;
+      height: inherit;
+      aspect-ratio: inherit;
+    }
+
+
+
+    .swiper {
+      width: 100%;
+      height: 90vh;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    @keyframesUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+
+    /* ANIMATIONS */    
+    .animate {
+        opacity: 0;
+    }
+    .animate2 {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 1s, transform 1s;
+    }
+    .animate3 {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 1s, transform 1s;
+    }
+    .animate4 {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .in-view {
+        opacity: 1;
+    }
+    .slide-in-up{
+        animation: slideInUp 1s;
+    }
+    /* ANIMATIONS END */
+
+
+
+    /* Hero Carousel */
+    .carousel-item {
+      height: 70vh;
+      min-height: 400px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .carousel-caption {
+      background: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+    .carousel-caption h1 {
+      font-size: 2.5rem;
+    }
+    .carousel-caption p {
+      font-size: 1.2rem;
+    }
+
+    .hero-caption {
+      position: absolute;
+      bottom: 15%;
+      left: 5%;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+      padding: 1.5rem 2rem;
+      border-radius: 16px;
+      animation:Up 1s ease forwards;
+    }
+    .hero-caption h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero-caption p {
+      font-size: .9rem;
+      margin-bottom: 1rem;
+    }
+
+
+    .btn {
+      background: #06f;
+      border-radius: 16px;
+      padding: 7px 14px 7px 14px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn:hover {
+      background: #08f;
+    }
+
+
+
+    /* STICKY TABS */
+    .sticky-tabs {
+      position: sticky;
+      top: 48px;
+      z-index: 100;
+      background: var(--bg-dark);
+      padding: 1rem 0;
+      border-bottom: 1px solid #222;
+    }
+
+    /* SNAP GRID */
+    .snap-container {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(260px, 1fr);
+      gap: 1.2rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      min-height: 300px;
+      padding: 2rem 1rem;
+    }
+
+    .snap-container::-webkit-scrollbar {
+      height: 3px;
+      background: #222;
+    }
+
+    .snap-container::-webkit-scrollbar-thumb {
+      background: #00bae2;
+      border-radius: 20px;
+    }
+
+    .snap-container::-webkit-scrollbar-thumb:hover {
+      background: #00cde7;
+    }
+
+
+
+    .modal-body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .modal-body p {
+      width: 100%;
+      display: inline-block;
+    }
+
+    @media (min-width: 760px) {
+      .modal-body {
+        flex-direction: row;
+      }
+    }
+
+    .modal-img {
+      max-width: 400px;
+      max-height: 400px;
+      /*place-self: start;*/
+      /*align-self: start;*/
+      /*aspect-ratio: 4 / 3;*/
+      object-fit: contain;
+    }
+
+
+    .modal-links {
+      list-style: none;
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+      gap: 2rem;
+    }
+
+
+    .primary-btn {
+      display: inline-block;
+      font-size: 15px;
+      font-family: "Play", sans-serif;
+      font-weight: 400;
+      padding: 10px 19px 9px;
+      background: rgba(30, 140, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(40, 140, 210, 0.8);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+      border-radius: inherit;
+      transition: all 0.3s;
+    }
+
+    .primary-btn:hover {
+      background: #49f;
+      color: #fff;
+      box-shadow: 0 30px 90px rgba(0, 0, 255, 0.5);
+      transition: all 0.3s;
+    }
+
+    .primary-btn:focus {
+      background: #16b;
+      border: 2px solid rgba(30, 160, 255, 0.7);
+      color: #fff;
+      transition: all 0.3s;
+    }
+
+
+
+    .project-card {
+      scroll-snap-align: start;
+      background: var(--bg-card);
+      border-radius: 16px;
+      display: inline-flex;
+      height: 320px;
+      position: relative;
+      cursor: pointer;
+      transition: all .3s ease;
+      overflow: hidden;
+      transform : scale(1.0);
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .project-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.75);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.85), transparent);
+      opacity: 0;
+      transition: opacity .25s ease;
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .project-title {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      opacity: 0;
+      transition: opacity .25s ease;
+    }
+
+    .project-card:hover .project-title {
+      opacity: 1;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #222;
+      padding: 2rem 0;
+      color: var(--text-muted);
+    }
+  </style>
+
 </head>
 
-<body>
-    
-    <!-- Header Section Begin -->
-    <div id="preloder">
-        <div class="loader"></div>
+<body class="animate3">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      
+      <a href="./index.html" class="header__logo">Baltai Daniel</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSocial" aria-controls="navbarSocial" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSocial">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+          <li class="nav-item" style="text-decoration: none;"><a target="_blank" href="https://linktr.ee/baltaidaniel"><i class="fa fa-link" style="font-size: 20px;"></i> <span class="nav-item-text">LinkTree</span></a></li>
+          <li class="nav-item"><a target="_blank" href="https://www.instagram.com/baltaidaniel"><i class="fa fa-instagram" style="font-size: 20px;"></i> <span class="nav-item-text">Instagram</span></a></li>
+          <li class="nav-item"><a target="_blank" href="https://www.x.com/baltaidaniel"><i class="fa fa-twitter" style="font-size: 20px;"></i> <span class="nav-item-text">X</span></a></li>
+          <li class="nav-item"><a target="_blank" href="https://www.github.com/BaltaiDaniel"><i class="fa fa-github" style="font-size: 20px;"></i> <span class="nav-item-text">GitHub</span></a></li>
+        </ul>
+      </div>
     </div>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html" style="width: 40px; height: 40px;"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <div class="header__nav__social">
-                            <a target="_blank" href="https://linktr.ee/baltaidaniel"><i class="fa fa-link"></i></a>
-                            <a target="_blank" href="https://www.instagram.com/baltaidaniel"><i class="fa fa-instagram"></i></a>
-                            <a target="_blank" href="https://www.x.com/baltaidaniel"><i class="fa fa-twitter"></i></a>
-                            <a target="_blank" href="https://www.github.com/BaltaiDaniel"><i class="fa fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="mobile-menu-wrap"></div>
+  </nav>
+
+
+  <!-- Hero Carousel -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide" style="background-image:url('img/bg.jpg');">
+        <div class="hero-caption">
+          <h1>BALTAI DANIEL</h1>
+          <p>Software developer</p>
         </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/work/work-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <h2>Glowing Orbs</h2>
-                                <span>Modelled and rendered in Blender</span>
-                                <a target="_blank" href="https://drive.google.com/uc?export=download&id=1gVa8GiY4RTtRO6f_x0uQ5LjzDy9X-N7G" class="primary-btn">
-                                    Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:url('img/work/work-25.webp');">
+        <div class="hero-caption" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Hourly Wage Calculator" data-subtitle="A simple calculator for freelancers. It helps you calculate your payment amount for a specified time range." data-category="software" data-imgsrc = "img/work/work-25.webp" data-modallink1 = "<a href='https://hourly-rate-calculator.en.uptodown.com/windows' class='btn' target='__blank'>Uptodown <i class='fa fa-external-link'></i></a>">
+          <h1>Hourly Wage Calculator</h1>
+          <p>Calculate your hourly pay.</p>
+          <a href="#" class="primary-btn">View Project</a>
         </div>
-    </section>
-    <!-- Hero Section End -->
+      </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
 
-    <!-- Services Section Begin -->
-    <section class="services animate" id="services">
-            <div class="container">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/app.png" alt="">
-                                </div>
-                                <p>Software</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/3d_model.png" alt="">
-                                </div>
-                                <p>3D Model</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/graphics.png" alt="">
-                                </div>
-                                <p>Graphic Design</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/game.png" alt="">
-                                </div>
-                                <p>Video Game</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <!-- <div class="container"> -->
-            <!-- <div class="row"> -->
-            <!-- </div> -->
-        <!-- </div> -->
-    </section>
-    <!-- Services Section End -->
 
 
-    <!-- Work Section Begin -->
-    <section class="work" id="work">
-        <div class="work__gallery">
-            <div class="grid-sizer">
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-18.webp">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=ofFJRGDDHq8" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                    <div class="work__item__hover">
-                        <h4>Word Chase Adventure</h4>
-                        <ul>
-                            <li>2D Platformer Video Game</li>
-                            <li><a target="_blank" href="https://www.youtube.com/watch?v=ofFJRGDDHq8" class="video-popup">Watch <i class="fa fa-play"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/game.png">
-                    </div>
-                    <!-- ----------------------------- -->
-                </div>
 
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-2.webp">
-                    <div class="work__item__hover">
-                        <h4>3D Character</h4>
-                        <ul>
-                            <li>3D Character</li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/3d_model.png">
-                    </div>
-                    <!-- ----------------------------- -->
-                </div>
 
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-22.webp">
-                    <div class="work__item__hover">
-                        <h4>Football Trophy</h4>
-                        <ul>
-                            <li>3D Model</li>
-                            <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=1yKIQQWWTm0E-k_Knr5F2wHwvVKm4FBqz" class="primary-btn">Download<i class="arrow_right-up"></i></a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/3d_model.png">
-                    </div>
-                    <!-- ----------------------------- -->
 
-                </div>
+<!-- STICKY TABS -->
+<div class="sticky-tabs">
+  <div class="container">
+    <h3 class="text-center">Projects</h3>
+    <ul class="nav nav-pills gap-2 sticky-tabs justify-content-center mb-4" id="projectTabs">
+      <li><button class="nav-link active" data-category="all">All</button></li>
+      <li><button class="nav-link" data-category="software">Software</button></li>
+      <li><button class="nav-link" data-category="3d_modelling">3D Modelling</button></li>
+      <li><button class="nav-link" data-category="graphic_design">Other Projects</button></li>
+    </ul>
+  </div>
+</div>
 
-                <div class="work__item large__item set-bg animate2" data-setbg="img/work/work-4.webp">
-                    <div class="work__item__hover">
-                        <h4>Geometric Wallpaper</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-4.webp" class="primary-btn">Download</a></li>
+<!-- SNAP GRID -->
+<div class="container-fluid">
+  <div class="snap-container" id="snapContainer">
 
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
-                </div>
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Word Chase Adventure" data-subtitle="An educational video game developed for an organization." data-category="software" data-imgsrc = "img/work/work-18.webp" data-modallink1 = "<a href='https://www.youtube.com/watch?v=ofFJRGDDHq8' class='btn' target='__blank'>Youtube <i class='fa fa-external-link'></i></a>">
+      <div class="project-bg" style="background-image:url('img/work/work-18.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Word Chase Adventure</h5>
+      </div>
+    </div>
 
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-5.webp">
-                    <div class="work__item__hover">
-                        <h4>Wallpaper</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=1gVa8GiY4RTtRO6f_x0uQ5LjzDy9X-N7G" class="primary-btn">Download<i class="arrow_right-up"></i></a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="3D Character" data-subtitle="A 3D character I modelled in Blender." data-category="3d_modelling" data-imgsrc = "img/work/work-2.webp">
+      <div class="project-bg" style="background-image:url('img/work/work-2.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>3D Character</h5>
+      </div>
+    </div>
 
-                </div>
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Football Trophy" data-subtitle="A football trophy modelled in Blender." data-category="3d_modelling" data-imgsrc = "img/work/work-22.webp">
+      <div class="project-bg" style="background-image:url('img/work/work-22.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Football Trophy</h5>
+      </div>
+    </div>
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Tronixx Learn" data-subtitle="A digital learning app." data-category="software" data-imgsrc = "img/work/work-9.webp" data-modallink1 = "<a href='https://tronixx-learn.en.uptodown.com/android' class='btn' target='__blank'>Uptodown <i class='fa fa-external-link'></i></a>">
+      <div class="project-bg" style="background-image:url('img/work/work-9.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Tronixx Learn</h5>
+      </div>
+    </div>
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Hourly Wage Calculator" data-subtitle="A simple calculator for freelancers. It helps you calculate your payment amount for a specified time range." data-category="software" data-imgsrc = "img/work/work-25.webp" data-modallink1 = "<a href='https://hourly-rate-calculator.en.uptodown.com/windows' class='btn' target='__blank'>Uptodown <i class='fa fa-external-link'></i></a>">
+      <div class="project-bg" style="background-image:url('img/work/work-25.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Hourly Wage Calculator</h5>
+      </div>
+    </div>
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Wallpaper 1" data-subtitle="A simple wallpaper rendered in Blender using the Cycles render engine." data-category="graphic_design" data-imgsrc = "img/work/work-8.webp">
+      <div class="project-bg" style="background-image:url('img/work/work-8.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Wallpaper 1</h5>
+      </div>
+    </div>
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Wallpaper 2" data-subtitle="A simple wallpaper rendered in Blender using the Cycles render engine." data-category="graphic_design" data-imgsrc = "img/work/work-19.webp">
+      <div class="project-bg" style="background-image:url('img/work/work-19.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Wallpaper 2</h5>
+      </div>
+    </div>
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Wallpaper 3" data-subtitle="A simple wallpaper rendered in Blender using the Cycles render engine." data-category="graphic_design" data-imgsrc = "img/work/work-16.webp">
+      <div class="project-bg" style="background-image:url('img/work/work-16.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Wallpaper 3</h5>
+      </div>
+    </div>
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Wallpaper 4" data-subtitle="A simple wallpaper rendered in Blender using the Cycles render engine." data-category="graphic_design" data-imgsrc = "img/work/work-15.webp" data-modallink1 = "<a href='https://www.renderhub.com/bd22' class='btn' target='__blank'> Renderhub <i class='fa fa-external-link'></i></a>">
+      <div class="project-bg" style="background-image:url('img/work/work-15.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Wallpaper 4</h5>
+      </div>
+    </div>
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Basketball" data-subtitle="Modelled and rendered in Blender using the Cycles render engine." data-category="3d_modelling" data-imgsrc = "img/work/work-17.webp" data-modallink1 = "<a href='https://www.renderhub.com/bd22' class='btn' target='__blank'> Renderhub <i class='fa fa-external-link'></i></a>">
+      <div class="project-bg" style="background-image:url('img/work/work-17.webp');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Basketball</h5>
+      </div>
+    </div>
+    
+    
+    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Randomizer" data-subtitle="Generates random values." data-category="software" data-imgsrc = "img/work/work-26.jpg" data-modallink1 = "<a href='https://randomizer.en.uptodown.com/windows' class='btn' target='__blank'>Uptodown <i class='fa fa-external-link'></i></a>">
+      <div class="project-bg" style="background-image:url('img/work/work-26.jpg');"></div>
+      <div class="project-overlay"></div>
+      <div class="project-title">
+        <h5>Randomizer</h5>
+      </div>
+    </div>
+    
 
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-6.webp">
-                    <div class="work__item__hover">
-                        <h4>Blue Vortex</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=1gGGwhJLr-lAT3T_aQiph3ZyMhHuHVwc6" class="primary-btn">Download<i class="arrow_right-up"></i></a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
+  </div>
+  <p class="text-center mt-1" style="color: #888">Tap on a project to see more details.</p>
+</div>
 
-                </div>
+<!-- MODAL -->
+<div class="modal fade" id="projectModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="modalTitle">Project</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img class="modal-img" id="modalImg" src="">
+        
+        <div>
+          <p id="modalSubtitle">
+            Detailed project description goes here. Architecture, stack, challenges, screenshots.
+          </p>
+          <ul class="modal-links">
+            <li id="modalLink1"></li>
+            <li id="modalLink2"></li>
+            <li id="modalLink3"></li>
+          </ul>
+        </div>
 
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-7.webp">
-                    <div class="work__item__hover">
-                        <h4>Infinity Logo</h4>
-                        <ul>
-                            <li>Logo</li>
-                            <li><a href="img/work/work-7.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
+      </div>
+    </div>
+  </div>
+</div>
 
-                </div>
-                
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-8.webp">
-                    <div class="work__item__hover">
-                        <h4>Boxy Floor</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-8.webp" class="primary-btn" download>Download</a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
+<!-- FOOTER -->
+<footer>
+  <div class="container d-flex justify-content-between align-items-center">
+    <span>Copyright © 2026 Baltai Daniel</span>
+  </div>
+</footer>
 
-                </div>
-              
-                <div class="work__item large__item set-bg animate2" data-setbg="img/work/work-9.webp">
-                    <div class="work__item__hover">
-                        <h4>Tronixx Learn</h4>
-                        <ul>
-                            <li>Educational Software</li>
-                            <li><a href="https://tronixx-learn.en.uptodown.com/android" title="Download Tronixx Learn" class="primary-btn">Get the app<i class="arrow_right-up"></i></a></li>
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/app.png">
-                    </div>
-                    <!-- ----------------------------- -->
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-                </div>
-              
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-10.webp">
-                    <div class="work__item__hover">
-                        <h4>Wallpaper</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-10.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
+  <script>
+    // Swiper Carousel
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: { delay: 4000 },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
 
-                </div>
-                
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-11.webp">
-                    <div class="work__item__hover">
-                        <h4>WhatsApp Redesign</h4>
-                        <ul>
-                            <li>UI Design</li>
-                            <li><a href="img/work/work-11.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
 
-                </div>
+    // Tabs Filter
+    const tabs = document.querySelectorAll('#projectTabs .nav-link');
+    const projects = document.querySelectorAll('#snapContainer .project-card');
 
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-24.webp">
-                    <div class="work__item__hover">
-                        <h4>Wallpaper</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-24.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // active tab styling
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
 
-                </div>
+        const selectedCategory = tab.dataset.category;
 
-                <div class="work__item large__item set-bg animate2" data-setbg="img/work/work-12.webp">
-                    <div class="work__item__hover">
-                        <h4>Tiktok Redesign</h4>
-                        <ul>
-                            <li>UI Design</li>
-                            <li><a href="img/work/work-12.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
 
-                </div>
-              
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-13.webp">
-                    <div class="work__item__hover">
-                        <h4>Reactor</h4>
-                        <ul>
-                            <li>3D Model</li>
-                            <li><a target="_blank" href="https://drive.google.comuc?export=download&id=1bhFMunEbcPG7JxoLAWZJXY_DIFsxiolq" class="primary-btn">Download<i class="arrow_right-up"></i></a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/3d_model.png">
-                    </div>
-                    <!-- ----------------------------- -->
 
-                </div>
+        projects.forEach(project => {
+          const projectCategory = project.dataset.category;
+          const match = selectedCategory === 'all' || projectCategory === selectedCategory;
 
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-3.webp">
-                    <div class="work__item__hover">
-                        <h4>Wallpaper</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-3.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-23.webp">
-                    <div class="work__item__hover">
-                        <h4>Aesthetic</h4>
-                        <ul>
-                            <li>3D Model</li>
-                            <li><a target="_blank" href="https://drive.google.comuc?export=download&id=1ZphX3rQNh7BvG76lDFpX9JwZ-0gggttF" class="primary-btn">Download<i class="arrow_right-up"></i></a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/3d_model.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
+          project.style.transform = 'scale(0.0)';
+          setTimeout(() => { 
+            project.style.display = 'none';
+          }, 300);
           
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-14.webp" a href="img/work/work-14.webp">
-                    <div class="work__item__hover">
-                        <h4>Geometric Wallpaper</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-14.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
+          if (!match) {
+              project.style.transform = 'scale(0.0)';
+              setTimeout(() => { 
+                project.style.display = 'none';
+              }, 300);
+          }
+          
+          else {
+            project.style.display = 'inline-flex';
+            project.style.transition = 'all 0.3s ease';
+              setTimeout(() => { 
+                project.style.transform = 'scale(1.0)';
+                project.style.display = 'inline-flex';
+              }, 300);
+          }
 
-                </div>
-                
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-15.webp">
-                    <div class="work__item__hover">
-                        <h4>The Sun</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-15.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-               
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-16.webp">
-                    <div class="work__item__hover">
-                        <h4>Design</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-16.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-               
-                <div class="work__item large__item set-bg animate2" data-setbg="img/work/work-25.webp">
-                    <div class="work__item__hover">
-                        <h4>Hourly Rate Calculator</h4>
-                        <ul>
-                            <li>Software</li>
-                            <li><a target="_blank" href="https://github.com/BaltaiDaniel/Hourly-Rate-Calculator" class="primary-btn" download>Get the code<i class="arrow_right-up"></i></a></li>
-                            <li><a href="https://hourly-rate-calculator.en.uptodown.com/windows" title="Download Hourly Rate Calculator" class="primary-btn">Get the app<i class="arrow_right-up"></i></a></li>
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/app.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-                
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-17.webp">
-                    <div class="work__item__hover">
-                        <h4>Basketball</h4>
-                        <ul>
-                            <li>3D Model</li>
-                            <li><a href="img/work.work-17.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/3d_model.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-                
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-8.webp">
-                    <div class="work__item__hover">
-                        <h4>Boxy Floor</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-8.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-19.webp">
-                    <div class="work__item__hover">
-                        <h4>Wallpaper</h4>
-                        <ul>
-                            <li>Wallpaper</li>
-                            <li><a href="img/work/work-19.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div></a>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-
-                <div class="work__item wide__item set-bg animate2" data-setbg="img/work/work-20.webp">
-                    <div class="work__item__hover">
-                        <h4>Logo</h4>
-                        <ul>
-                            <li>Logo</li>
-                            <li><a href="img/work/work-20.webp" class="primary-btn">Download</a></li>
-                            
-                        </ul>
-                    </div>
-                    <!-- ----------------------------- -->
-                    <div class="category_img">
-                        <img src="img/icons/graphics.png">
-                    </div>
-                    <!-- ----------------------------- -->
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Work Section End -->
-
-   
-
-    <!-- Footer Section Begin -->
-    <footer class="footer animate2" id="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt="BD21 Logo"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a target="_blank" href="https://www.linktr.ee/baltaidaniel"><i class="fa fa-link"></i></a>
-                            <a target="_blank" href="https://www.instagram.com/baltaidaniel"><i class="fa fa-instagram"></i></a>
-                            <a target="_blank" href="https://www.x.com/baltaidaniel"><i class="fa fa-twitter"></i></a>
-                            <a target="_blank" target="_blank" href="https://www.github.com/BaltaiDaniel"><i class="fa fa-github"></i></a>
-                            
-                            
-                        </div>
-                    </div>
-                    
-                    <!-- <h2 class="motto">Stop existing and start living!</h2> -->
-                    
-                </div>
-            </div>
-            
-            
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-
-
-    <script>
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= 1100 &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function isInViewport2(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= 1500 &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-
-        function isInViewport3(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= 2700 &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.animate');
-            elements.forEach(element => {
-                if (isInViewport2(element)) {
-                    element.classList.remove('animate');
-                    element.classList.add('slide-in-down');
-                }
-            }); 
-
-            const elements2 = document.querySelectorAll('.animate2');
-            elements2.forEach(element => {
-                if (isInViewport(element)) {
-                    element.classList.remove('animate2');
-                    element.classList.add('slide-in-up');
-                }
-            });
-
-            const elements3 = document.querySelectorAll('.animate3');
-            elements3.forEach(element => {
-                if (isInViewport2(element)) {
-                    element.classList.remove('animate3');
-                    element.classList.add('slide-in-up');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-    </script>
+        });
+      });
+    });
 
 
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    const modal = document.getElementById('projectModal');
+    modal.addEventListener('show.bs.modal', e => {
+      const item = e.relatedTarget;
+      modal.querySelector('#modalTitle').textContent = item.dataset.title || '';
+      modal.querySelector('#modalSubtitle').textContent = item.dataset.subtitle || '';
+      modal.querySelector('#modalImg').src = item.dataset.imgsrc || '';
+      modal.querySelector('#modalLink1').innerHTML = item.dataset.modallink1 || '';
+      modal.querySelector('#modalLink2').textContent = item.dataset.modallink2 || '';
+      modal.querySelector('#modalLink3').textContent = item.dataset.modallink2 || '';
+    });
+
+
+
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= 1100 &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function isInViewport2(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= 1500 &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+
+    function isInViewport3(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= 2700 &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function animateOnScroll() {
+        const elements = document.querySelectorAll('.animate');
+        elements.forEach(element => {
+            if (isInViewport2(element)) {
+                element.classList.remove('animate');
+                element.classList.add('slide-in-down');
+            }
+        }); 
+
+        const elements2 = document.querySelectorAll('.animate2');
+        elements2.forEach(element => {
+            if (isInViewport(element)) {
+                element.classList.remove('animate2');
+                element.classList.add('slide-in-up');
+            }
+        });
+
+        const elements3 = document.querySelectorAll('.animate3');
+        elements3.forEach(element => {
+            if (isInViewport2(element)) {
+                element.classList.remove('animate3');
+                element.classList.add('slide-in-up');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+
+  </script>
 
 </body>
-
 </html>
